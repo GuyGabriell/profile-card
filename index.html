@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <header class="profile-header">
+        <figure class="profile-avatar">
+          <img src="channel/channel.png" alt="User avatar" data-testid="test-user-avatar" />
+        </figure>
+        <dvi class="profile-info">
+          <h2 data-testid="test-user-name">Gabriel Guy jonah</h2>
+          <p class="profile-bio" data-testid="test-user-bio">
+            I am a frontend developer who is passionate about building scalable,
+            beautiful, responsive and accessible IUs with the user experience in
+            mind.
+          </p>
+          <p class="profile-time">
+            Current time (ms):
+            <span id="current-time" data-testid="test-user-time"></span>
+          </p>
+        </dvi>
+      </header>
+
+      <nav
+        class="social-links"
+        aria-label="User social links"
+        data-testid="test-user-social-links"
+      >
+        <ul>
+          <li>
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-twitter"
+              >Twitter</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="hobbies-container">
+        <section class="profile-hobbies">
+          <h3>Hobbies</h3>
+          <ul data-testid="test-user-hobbies">
+            <li>Reading</li>
+            <li>Music</li>
+            <li>Coding</li>
+            <li>Gaming</li>
+          </ul>
+        </section>
+
+        <section class="profile-dislikes">
+          <h3>Dislikes</h3>
+          <ul data-testid="test-user-dislikes">
+            <li>Procrastination</li>
+            <li>Poor UI design</li>
+            <li>Unclear documentation</li>
+          </ul>
+        </section>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>

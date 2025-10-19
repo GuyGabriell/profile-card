@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 90%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Header layout */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.profile-avatar img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info h2 {
+  font-size: 24px;
+  margin: 8px 0;
+}
+
+.profile-bio {
+  color: #555;
+  margin: 8px 0;
+}
+
+.profile-time {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Social links */
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin: 8px 0;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: #0077ff;
+  font-weight: 500;
+}
+
+.social-links a:focus,
+.social-links a:hover {
+  text-decoration: underline;
+  outline: 2px solid #0077ff;
+  outline-offset: 2px;
+}
+
+/* Lists for hobbies and dislikes */
+
+.hobbies-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* On larger screens, place them side by side */
+@media (min-width: 700px) {
+  .hobbies-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+section {
+  text-align: left;
+}
+
+section h3 {
+  margin-bottom: 8px;
+}
+
+ul {
+  list-style: square inside;
+  padding-left: 0;
+  margin: 0;
+}
+
+@media (min-width: 700px) {
+  .profile-header {
+    flex-direction: row;
+    align-items: center;
+    text-align: left;
+  }
+
+  .profile-avatar {
+    margin-right: 16px;
+  }
+
+  .profile-info {
+    flex: 1;
+  }
+}
